@@ -23,7 +23,7 @@ ENV WEB_PORT 80
 EXPOSE  80
 
 # uninstall openssh-server
-RUN apt-get --purge remove openssh-server
+# RUN apt-get --purge remove openssh-server
 
 # Fix PASS.MAX.DAYS and PASS.MIN.LEN
 RUN mv -f /etc/login.defs /etc/login.defs.orig
